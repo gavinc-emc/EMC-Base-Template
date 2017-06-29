@@ -1,115 +1,165 @@
-// General styles
+/*
+ * ------------------------------------------------------------------------------
+ * Custom styles
+ *
+ * Build your styles for the template
+ *
+ * [Global]
+ * [Typography]
+ * [Buttons and calls to action]
+ * [Forms]
+ * [Menus]
+ *   [Mobile menu]
+ *   [Desktop menu]
+ * [Header]
+ * [Category / Blog / News]
+ * [Single article]
+ * [Grid]
+ * ------------------------------------------------------------------------------
+ */
+
+/*
+ * ------------------------------------------------------------------------------
+ * Global styles
+ * ------------------------------------------------------------------------------
+ */
 * {
-	box-sizing: border-box;
-	-webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
-html,
-body {	
-	color: @textCol;
-	background: red;
-
+html, body {
+    color: @textCol;
+    background: red;
 }
 
 #outerwrap {
-	position: relative;
-  overflow: hidden;
-  width: 100%;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
 }
 
 #innerwrap {
-	position: relative;
-  width: 100%;
+    position: relative;
+    width: 100%;
 }
 
 .internal-container {
-	max-width: @containerMaxWidth;
-	width: @containerWidth;
-	margin: 0 auto;
+    max-width: @containerMaxWidth;
+    width: @containerWidth;
+    margin: 0 auto;
 }
 
-
-// Typography
+/*
+ * ------------------------------------------------------------------------------
+ * Typography
+ * ------------------------------------------------------------------------------
+ */
 h1, h2, h3, h4 {
 
 }
 
 p {
-	margin-top: 0;
+    margin-top: 0;
 }
 
 a {
-	text-decoration: none;
-	font-weight: 700;
-	color: @linkCol;
-	transition: all .3s;
-
-	&:hover {
-		// color: @blue;
-	}
+    text-decoration: none;
+    font-weight: 700;
+    color: @linkCol;
+    transition: all .3s;
+    &:hover {
+        // color: @blue;
+    }
 }
 
-
-
-
-// Buttons and calls to action
+/*
+ * ------------------------------------------------------------------------------
+ * Buttons and calls to action
+ * ------------------------------------------------------------------------------
+ */
 .btn {
-	display: inline-block;
-	padding: .3em 1em;
-	color: @btnCol;
-	background: @btnBgCol;
-	transition: background .3s ease-in-out;
-
-	&:hover {
-		background: darken(@btnBgCol, 5%);
-	}
+    display: inline-block;
+    padding: .3em 1em;
+    color: @btnCol;
+    background: @btnBgCol;
+    transition: background .3s ease-in-out;
+    &:hover {
+        background: darken(@btnBgCol, 5%);
+    }
 }
 
-// Form styling
+/*
+ * ------------------------------------------------------------------------------
+ * Forms
+ * ------------------------------------------------------------------------------
+ */
 
-
-// Menu styling
-
+/*
+ * ------------------------------------------------------------------------------
+ * Menus
+ * ------------------------------------------------------------------------------
+ */
 #navwrap {
-	background: pink
+    background: pink
 }
 
-// mobile menu styles
-#menu {
+    /*
+     * ------------------------------------------------------------------------------
+     * Mobile menu
+     * ------------------------------------------------------------------------------
+     */
+    #menu {
 
-}
+    }
 
-// desktop menu styles
-@media screen and (min-width: @bp_mobileMenu) {
-	#menu {
+    /*
+     * ------------------------------------------------------------------------------
+     * Desktop menu
+     * ------------------------------------------------------------------------------
+     */
+    @media screen and (min-width: @bp_mobileMenu) {
+        #menu {
 
-	}//menu	
-} // end of mobile menu styling
+        } // menu
+    } // end of mobile menu styling
 
-
-// Header
-
+/*
+ * ------------------------------------------------------------------------------
+ * Header
+ * ------------------------------------------------------------------------------
+ */
 #logo {
 
 }
 
 #topwrap {
-	p {
-		margin-bottom: 0;
-		color: #fff;
-	}
+    p {
+        margin-bottom: 0;
+        color: #fff;
+    }
 }
 
-// Category / Blog / News pages
+/*
+ * ------------------------------------------------------------------------------
+ * Category / Blog / News
+ * ------------------------------------------------------------------------------
+ */
 
 
-// Single article pages
+/*
+ * ------------------------------------------------------------------------------
+ * Single article
+ * ------------------------------------------------------------------------------
+ */
 
-// Grid styling for example
 
+/*
+ * ------------------------------------------------------------------------------
+ * Grid
+ * ------------------------------------------------------------------------------
+ */
 #topwrap {
-	padding: 4em 0 3em 0;
+    padding: 4em 0 3em 0; // for example
 }
-
-
